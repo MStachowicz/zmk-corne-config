@@ -118,10 +118,10 @@
             //                     | GUI |     | ALT/ENT |   | HYPER/SPACE | BKSP |    |
 
             bindings = <
-&trans  &kp EXCL           &kp DOUBLE_QUOTES  &kp HASH       &kp DOLLAR        &kp PERCENT    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PIPE    &open_parentheses  &trans
-&trans  &kp CARET          &kp AMPERSAND      &kp ASTERISK   &kp MINUS         &kp EQUAL      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PERIOD  &open_braces       &kp SQT
-&trans  &kp LS(BACKSLASH)  &kp BACKSLASH      &kp LESS_THAN  &kp GREATER_THAN  &kp PLUS       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0      &open_brackets     &kp QUESTION
-                                              &to 0          &trans            &trans         &trans        &trans        &to 2
+&trans  &kp EXCL                  &kp DOUBLE_QUOTES     &kp HASH       &kp DOLLAR        &kp PERCENT    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PIPE    &open_parentheses  &trans
+&trans  &kp CARET                 &kp AMPERSAND         &kp ASTERISK   &kp MINUS         &kp EQUAL      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PERIOD  &open_braces       &kp SQT
+&trans  &kp LS(NON_US_BACKSLASH)  &kp NON_US_BACKSLASH  &kp LESS_THAN  &kp GREATER_THAN  &kp PLUS       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0      &open_brackets     &kp QUESTION
+                                                        &to 0          &trans            &trans         &trans        &trans        &to 2
             >;
 
             label = "SYMBOL";
@@ -140,6 +140,8 @@
 &trans  &none         &none         &none                &kp END              &kp PAGE_DOWN    &kp F1  &kp F2  &kp F3  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
                                     &to 1                &trans               &trans           &trans  &trans  &to 2
             >;
+
+            label = "NAV ↔";
         };
     };
 };
